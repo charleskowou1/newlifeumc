@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Upcoming Events | New Life UMC</title>
+
+  <!-- Main site CSS (path matters!) -->
+
+  <!-- Global site CSS (defines variables, nav, footer, buttons, etc.) -->
+  <link rel="stylesheet" href="../styles.css" />
+
+  <!-- Events-only CSS -->
+  <link rel="stylesheet" href="./events.css" />
+
+  <!-- Font Awesome (for footer icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+</head>
+
+<body>
+  <!-- ===== Topbar ===== -->
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <div class="brand">
+        <img src="../images/LOGO.png" alt="Church Logo" class="brand__logo" />
+        <div class="brand__name">New Life United Methodist Church</div>
+      </div>
+
+      <div class="topbar__right">
+        <a class="iconBtn" href="mailto:newlifeumc1@gmail.com" aria-label="Email">
+          <i class="fa-regular fa-envelope"></i>
+        </a>
+        <a class="iconCircle" href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a class="iconCircle" href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        <a class="iconCircle" href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== Nav ===== -->
+  <nav class="nav">
+      <div class="container nav__inner">
+        <button class="nav__toggle" aria-label="Open menu" aria-expanded="false" id="menuToggle">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <ul class="nav__links" id="navLinks">
+          <li><a class="nav__link is-active" href="/index.html">Home</a></li>
+
+          <li class="has-dropdown">
+            <a class="nav__link" href="#ministries">Ministries <i class="fa-solid fa-chevron-down"></i></a>
+            <ul class="dropdown">
+              <li><a href="#">Love Renegades</a></li>
+              <li><a href="#">Women’s & Men’s Ministries</a></li>
+              <li><a href="#">Young People Ministries</a></li>
+              <li><a href="#">Ministry of Blessing</a></li>
+              <li><a href="#">Worship Ministries</a></li>
+            </ul>
+          </li>
+
+          <li class="has-dropdown">
+            <a class="nav__link" href="#spiritual">Spiritual Enrichment <i class="fa-solid fa-chevron-down"></i></a>
+            <ul class="dropdown">
+              <li><a href="/pages/prayer-requests.html">Prayer Requests</a></li>
+              <li><a href="#">Worship Services</a></li>
+              <li><a href="#">Bible Study Nuggets</a></li>
+              <li><a href="#">Junior Church Lessons</a></li>
+            </ul>
+          </li>
+
+          <li class="has-dropdown">
+            <a class="nav__link" href="#mission">Mission Ministry <i class="fa-solid fa-chevron-down"></i></a>
+            <ul class="dropdown">
+              <li><a href="../pages/events.html">Upcoming Events</a></li>
+              <li><a href="../pages/mission-partners.html">Mission Partners</a></li>
+              <li><a href="../pages/gallery.html">Picture Gallery</a></li>
+            </ul>
+          </li>
+
+          <li class="has-dropdown">
+            <a class="nav__link" href="#about">About Us <i class="fa-solid fa-chevron-down"></i></a>
+            <ul class="dropdown">
+              <li><a href="#leaders">Leaders</a></li>
+              <li><a href="#">Mission & Vision</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <a class="btn btn--primary" href="https://pushpay.com/g/newlifeumcpa" target="_blank" rel="noreferrer">
+          Push Pay
+        </a>
+      </div>
+  </nav>
+
+  <!-- ===== Page Content ===== -->
+  <main class="container events-wrap">
+    <div class="events-head">
+      <div>
+        <h1 class="pageTitle">Upcoming Events</h1>
+        <p class="events-sub">
+          What’s happening at New Life UMC — add events to your calendar and stay connected.
+        </p>
+      </div>
+
+      <div class="events-pill">
+        <i class="fa-regular fa-calendar"></i>
+        Live from Google Calendar
+      </div>
+    </div>
+
+    <div class="events-controls">
+      <label for="eventCount">Show</label>
+      <select id="eventCount">
+        <option value="5" selected>5</option>
+        <option value="10">10</option>
+        <option value="15">15</option>
+        <option value="25">25</option>
+      </select>
+
+      <button id="refreshEvents" type="button">
+        <i class="fa-solid fa-rotate"></i>
+        Refresh
+      </button>
+    </div>
+
+    <div id="eventsState" class="events-state">Loading events…</div>
+    <section id="eventsList" class="events-list" aria-live="polite"></section>
+  </main>
+
+  <!-- ===== Footer (same as index) ===== -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <div class="footer__cap">Get In Contact</div>
+        <div class="footer__row"><i class="fa-solid fa-location-dot"></i><span>2600 Bond Ave, Drexel Hill, PA
+            19026</span>
+        </div>
+        <div class="footer__row"><i class="fa-solid fa-phone"></i><span>(+123) 4567 890</span></div>
+        <div class="footer__row"><i class="fa-regular fa-envelope"></i><a
+            href="mailto:newlifeumc1@gmail.com">newlifeumc1@gmail.com</a></div>
+      </div>
+
+      <div>
+        <div class="footer__cap">Subscribe Newsletter</div>
+        <p class="footer__muted">You will be notified when something new will be appear.</p>
+
+        <div class="footer__cap footer__cap--mt">Follow Us Social</div>
+        <div class="social">
+          <a class="social__btn" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a class="social__btn" href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          <a class="social__btn" href="#"><i class="fa-brands fa-google"></i></a>
+          <a class="social__btn" href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a class="social__btn" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div>
+        <div class="footer__cap">Our Recent Posts</div>
+        <p class="footer__muted">Add your latest posts here when you’re ready.</p>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container footer__bottomInner">
+        <div>© Copyright 2025. All Rights Reserved.</div>
+        <div>Grace and Peace, New Life UMC</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Your global nav JS -->
+  <script src="../script.js"></script>
+
+  <!-- Events page JS -->
+  <script src="../script-events.js"></script>
+</body>
+
+</html>

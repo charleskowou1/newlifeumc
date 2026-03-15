@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Weekly Announcements | New Life United Methodist Church</title>
+
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Icons (Font Awesome) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- IMPORTANT: we're inside /pages so go up one level -->
+  <link rel="stylesheet" href="../styles.css" />
+
+  <style>
+    .gdoc-embed {
+      width: 100%;
+      margin-top: 14px;
+      border: 1px solid #ececec;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, .08);
+      background: #fff;
+    }
+
+    .gdoc-embed iframe {
+      display: block;
+      width: 100% !important;
+      height: 82vh !important;
+      min-height: 720px;
+      border: 0 !important;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Top header (same as index.html) -->
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="../index.html">
+        <img class="brand__logo" src="https://newlifeumc.church/wp-content/uploads/2025/10/New-Life-UMC-Logo.png"
+          alt="New Life UMC logo" loading="lazy" />
+        <span class="brand__name">New Life United Methodist Church</span>
+      </a>
+
+      <div class="topbar__actions">
+        <a class="icon-sq" href="mailto:newlifeumc1@gmail.com" aria-label="Email">
+          <i class="fa-regular fa-envelope"></i>
+        </a>
+
+        <a class="icon-circle" href="https://www.facebook.com/" aria-label="Facebook">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+
+        <a class="icon-circle" href="https://www.youtube.com/" aria-label="YouTube">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+
+        <a class="icon-circle" href="https://www.instagram.com/" aria-label="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Nav (same as index.html, just fix the links for /pages) -->
+  <nav class="nav">
+    <div class="container nav__inner">
+      <button class="nav__toggle" aria-label="Open menu" aria-expanded="false" id="menuToggle">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <ul class="nav__links" id="navLinks">
+        <li><a class="nav__link" href="../index.html">Home</a></li>
+
+        <li class="has-dropdown">
+          <a class="nav__link" href="../index.html#ministries">Ministries <i class="fa-solid fa-chevron-down"></i></a>
+          <ul class="dropdown">
+            <li><a href="#">Love Renegades</a></li>
+            <li><a href="#">Women’s & Men’s Ministries</a></li>
+            <li><a href="#">Young People Ministries</a></li>
+            <li><a href="#">Ministry of Blessing</a></li>
+            <li><a href="#">Worship Ministries</a></li>
+          </ul>
+        </li>
+
+        <li class="has-dropdown">
+          <a class="nav__link" href="../index.html#spiritual">Spiritual Enrichment <i
+              class="fa-solid fa-chevron-down"></i></a>
+          <ul class="dropdown">
+            <li><a href="/pages/prayer-requests.html">Prayer Requests</a></li>
+            <li><a href="#">Worship Services</a></li>
+            <li><a href="#">Bible Study Nuggets</a></li>
+            <li><a href="#">Junior Church Lessons</a></li>
+          </ul>
+        </li>
+
+        <li class="has-dropdown">
+          <a class="nav__link" href="../index.html#mission">Mission Ministry <i
+              class="fa-solid fa-chevron-down"></i></a>
+          <ul class="dropdown">
+            <li><a href="./events.html">Upcoming Events</a></li>
+            <li><a href="./mission-partners.html">Mission Partners</a></li>
+            <li><a href="./gallery.html">Picture Gallery</a></li>
+          </ul>
+        </li>
+
+        <li class="has-dropdown">
+          <a class="nav__link" href="../index.html#about">About Us <i class="fa-solid fa-chevron-down"></i></a>
+          <ul class="dropdown">
+            <li><a href="../index.html#leaders">Leaders</a></li>
+            <li><a href="#">Mission & Vision</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </li>
+
+        <!-- Optional: add a direct link to announcements (active) -->
+        <li><a class="nav__link is-active" href="./weekly-announcements.html">Announcements</a></li>
+      </ul>
+
+      <a class="btn btn--primary" href="https://pushpay.com/g/newlifeumcpa" target="_blank" rel="noreferrer">
+        Push Pay
+      </a>
+    </div>
+  </nav>
+
+  <!-- Page content -->
+  <section class="section events-page">
+    <div class="container">
+      <div class="events-header">
+        <div>
+          <h1 class="events-title">Weekly Announcements</h1>
+          <p class="events-subtitle">Stay up to date with what’s happening this week at New Life UMC.</p>
+        </div>
+
+        <!-- Optional: a button to open the doc in a new tab -->
+        <a class="btn btn--solid" target="_blank" rel="noreferrer"
+          href="https://docs.google.com/document/d/e/2PACX-1vTp9K9_qfwOSvwq5NKNVFzXSEZrHayhVtp8_Q8-QZt_3qoX7xRPQWIEivWna4wcGVLtsUR2sE75f622/pub?embedded=true">
+          Open in Google Docs
+        </a>
+      </div>
+
+      <div class="events-panel">
+        <div class="events-toolbar">
+          <span class="pill"><i class="fa-regular fa-calendar"></i> Updated Weekly</span>
+          <div class="events-toolbar__right"></div>
+        </div>
+
+        <!-- Responsive embed -->
+        <section class="announcements-wrapper">
+          <div class="gdoc-embed">
+            <iframe
+              src="https://docs.google.com/document/d/e/2PACX-1vQ1XdVj40u82pUrFM27Vn1Nb0Ds914gIrZjoDvnTatWpxN9W0-fDMEin4JyThSrcRPQSLE0P1DDy3bF/pub?embedded=true">
+            </iframe>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+
+  <script src="../script.js"></script>
+</body>
+
+</html>

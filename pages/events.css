@@ -1,0 +1,178 @@
+.events-wrap {
+ padding: 56px 0 30px;
+}
+
+.events-head {
+ display: flex;
+ align-items: flex-start;
+ justify-content: space-between;
+ gap: 18px;
+ flex-wrap: wrap;
+ margin-bottom: 18px;
+}
+
+.events-sub {
+ margin: 8px 0 0;
+ color: rgba(0, 0, 0, 0.7);
+ line-height: 1.6;
+ max-width: 62ch;
+}
+
+.events-controls {
+ display: flex;
+ gap: 10px;
+ align-items: center;
+ flex-wrap: wrap;
+ margin: 14px 0 22px;
+}
+
+.events-pill {
+ display: inline-flex;
+ align-items: center;
+ gap: 8px;
+ padding: 10px 14px;
+ border-radius: 999px;
+ border: 2px solid var(--accent);
+ font-weight: 800;
+ background: #fff;
+}
+
+.events-controls label {
+ font-weight: 700;
+}
+
+.events-controls select,
+.events-controls button {
+ height: 38px;
+ border-radius: 10px;
+}
+
+.events-controls select {
+ border: 1px solid rgba(0, 0, 0, 0.18);
+ padding: 0 10px;
+ background: #fff;
+}
+
+.events-controls button {
+ border: 0;
+ padding: 0 14px;
+ background: var(--accent);
+ color: #fff;
+ font-weight: 800;
+ cursor: pointer;
+}
+
+.events-controls button:hover {
+ background: var(--accent-2);
+}
+
+.events-list {
+ display: grid;
+ gap: 14px;
+ margin-top: 10px;
+}
+
+.event-card {
+ display: grid;
+ grid-template-columns: 74px 1fr;
+ gap: 14px;
+ padding: 16px;
+ border: 1px solid rgba(0, 0, 0, 0.08);
+ border-radius: 16px;
+ background: #fff;
+ box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.event-date {
+ border-radius: 14px;
+ border: 2px solid rgba(0, 0, 0, 0.08);
+ display: grid;
+ place-items: center;
+ padding: 10px 8px;
+ text-align: center;
+ background: rgba(0, 0, 0, 0.02);
+}
+
+.event-date .m {
+ font-weight: 900;
+ letter-spacing: 0.08em;
+ font-size: 12px;
+ color: rgba(0, 0, 0, 0.7);
+}
+
+.event-date .d {
+ font-weight: 1000;
+ font-size: 28px;
+ line-height: 1.1;
+}
+
+.event-title {
+ margin: 0 0 6px;
+ font-size: 20px;
+ font-weight: 900;
+}
+
+.event-meta {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 10px;
+ align-items: center;
+ margin: 0 0 10px;
+ color: rgba(0, 0, 0, 0.7);
+ font-weight: 600;
+}
+
+.event-meta span {
+ display: inline-flex;
+ align-items: center;
+ gap: 8px;
+}
+
+.event-desc {
+ margin: 0;
+ color: rgba(0, 0, 0, 0.75);
+ line-height: 1.65;
+}
+
+.event-actions {
+ margin-top: 10px;
+}
+
+.event-actions a {
+ display: inline-flex;
+ align-items: center;
+ gap: 8px;
+ font-weight: 900;
+ color: var(--accent);
+ text-decoration: none;
+}
+
+.event-actions a:hover {
+ text-decoration: underline;
+}
+
+.events-state {
+ margin-top: 10px;
+ color: rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 640px) {
+ .event-card {
+  grid-template-columns: 1fr;
+ }
+
+ .event-date {
+  width: 96px;
+ }
+}
+
+/* Fix: prevent global .event-date styles from styles.css affecting this page */
+.events-wrap .event-date {
+ color: #121212;
+ /* or var(--ink) if available */
+}
+
+.events-wrap .event-date .d,
+.events-wrap .event-date .m {
+ color: #121212;
+}

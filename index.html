@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>New Life United Methodist Church</title>
+
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Icons (Font Awesome) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- webicon -->
+  <link rel="icon" type="image/png" href="New-Life-UMC-Logo.png">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- Top header -->
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="./index.html">
+        <img class="brand__logo" src="./assets/Nogo.png" alt="New Life UMC logo" loading="lazy" />
+        <span class="brand__name">New Life United Methodist Church</span>
+      </a>
+
+      <div class="topbar__actions">
+        <a class="icon-sq" href="mailto:newlifeumc1@gmail.com" aria-label="Email">
+          <img src="assets/icons/Social Media/email.png" alt="Email">
+        </a>
+
+        <a class="icon-circle" href="https://www.facebook.com/newlifeumcdrexelhillpa/" target="_blank">
+          <img src="assets/icons/Social Media/facebook.png" alt="Facebook">
+        </a>
+
+        <a class="icon-circle" href="https://www.youtube.com/" target="_blank">
+          <img src="assets/icons/Social Media/youtube.png" alt="YouTube">
+        </a>
+
+        <a class="icon-circle" href="https://www.instagram.com/" target="_blank">
+          <img src="assets/icons/Social Media/instagram.png" alt="Instagram">
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Nav -->
+  <nav class="nav">
+    <div class="container nav__inner">
+      <button class="nav__toggle" aria-label="Open menu" aria-expanded="false" id="menuToggle">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <ul class="nav__links" id="navLinks">
+
+        <li class="has-dropdown">
+          <a class="nav__link" href="#ministries">Ministries <i class="fa-solid fa-chevron-down"></i></a>
+          <ul class="dropdown">
+            <li><a href="#">Love Renegades</a></li>
+            <li><a href="#">Women’s & Men’s Ministries</a></li>
+            <li><a href="#">Young People Ministries</a></li>
+            <li><a href="#">Ministry of Blessing</a></li>
+            <li><a href="#">Worship Ministries</a></li>
+          </ul>
+        </li>
+
+        <li class="has-dropdown">
+          <a class="nav__link" href="#spiritual">Spiritual Enrichment <i class="fa-solid fa-chevron-down"></i></a>
+          <ul class="dropdown">
+            <li><a href="/pages/prayer-requests.html">Prayer Requests</a></li>
+            <li><a href="#">Worship Services</a></li>
+            <li><a href="#">Bible Study Nuggets</a></li>
+            <li><a href="#">Junior Church Lessons</a></li>
+          </ul>
+        </li>
+
+        <li class="has-dropdown">
+          <a class="nav__link" href="#mission">Mission Ministry <i class="fa-solid fa-chevron-down"></i></a>
+          <ul class="dropdown">
+            <li><a href="../pages/events.html">Upcoming Events</a></li>
+            <li><a href="../pages/mission-partners.html">Mission Partners</a></li>
+            <li><a href="../pages/gallery.html">Picture Gallery</a></li>
+          </ul>
+        </li>
+
+        <li class="has-dropdown">
+          <a class="nav__link" href="#about">About Us <i class="fa-solid fa-chevron-down"></i></a>
+          <ul class="dropdown">
+            <li><a href="#leaders">Leaders</a></li>
+            <li><a href="/pages/mission-vision.html">Mission & Vision</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <a class="btn btn--primary btn--donate" href="https://pushpay.com/g/newlifeumcpa" target="_blank"
+        rel="noreferrer">
+        <i class="fa-solid fa-heart"></i>
+        Push Pay
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="heroSlider">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <!-- Slider arrows -->
+    <button class="hero__arrow hero__arrow--left" type="button" aria-label="Previous image" id="heroPrev">
+      <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+    </button>
+
+    <button class="hero__arrow hero__arrow--right" type="button" aria-label="Next image" id="heroNext">
+      <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+    </button>
+
+    <div class="container hero__content">
+      <h1>Welcome to New Life UMC</h1>
+      <p class="hero__sub">Where New Things Happen.</p>
+
+      <a id="liveNowBtn" class="btn btn--ghost btn--live" href="https://www.facebook.com/newlifeumcdrexelhillpa/"
+        target="_blank" rel="noopener" style="display:none;">
+        <span class="live-dot" aria-hidden="true"></span>
+        <span>Live Now</span>
+      </a>
+
+      <a id="planVisitBtn" class="btn btn--ghost" href="https://www.facebook.com/newlifeumcdrexelhillpa/">Join Now</a>
+      <div class="hero__dots" id="heroDots">
+        <button class="hero__dot" data-slide="0" aria-label="Slide 1"></button>
+        <button class="hero__dot" data-slide="1" aria-label="Slide 2"></button>
+        <button class="hero__dot" data-slide="2" aria-label="Slide 3"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 cards -->
+  <section class="section section--tight">
+    <div class="container">
+      <div class="cards3">
+
+        <!-- Order of Worship -->
+        <a class="feature-card" href="#">
+          <div class="feature-card__icon">
+            <img src="assets/icons/partners.png" alt="Order of Worship" />
+          </div>
+          <div class="feature-card__body">
+            <h3>Mission Partners</h3>
+            <span class="feature-card__arrow">
+              <i class="fa-solid fa-angles-right"></i>
+            </span>
+          </div>
+        </a>
+
+        <!-- Upcoming Events -->
+        <a class="feature-card" href="pages/events.html">
+          <div class="feature-card__icon">
+            <img src="assets/icons/events.png" alt="Upcoming Events" />
+          </div>
+          <div class="feature-card__body">
+            <h3>Upcoming Events</h3>
+            <span class="feature-card__arrow">
+              <i class="fa-solid fa-angles-right"></i>
+            </span>
+          </div>
+        </a>
+
+        <!-- Weekly Announcements -->
+        <a class="feature-card" href="./pages/gallery.html">
+          <div class="feature-card__icon">
+            <img src="assets/icons/camera.png" alt="Weekly Announcements" />
+          </div>
+          <div class="feature-card__body">
+            <h3>Picture Gallery</h3>
+            <span class="feature-card__arrow">
+              <i class="fa-solid fa-angles-right"></i>
+            </span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Theme banner -->
+  <section class="banner">
+    <div class="container banner__inner">
+      <span class="pill">Theme for 2026</span>
+      <h2>To Live in Purpose &amp; Thrive!</h2>
+      <p class="banner__verse">
+        <strong>Ephesians 2:10</strong> – For we are God’s handiwork, created in Christ Jesus to do good works,
+        which God prepared in advance for us to do.
+      </p>
+    </div>
+  </section>
+
+  <!-- Leaders -->
+  <section class="section" id="leaders">
+    <div class="container">
+      <h2 class="section__title">Meet Our Wonderful Pastor &amp; Leaders</h2>
+
+      <div class="leaders">
+        <article class="leader-card">
+          <img src="assets/headshots/pastorshayla.jpg" alt="Rev. Shayla Johnson" loading="lazy" />
+          <div class="leader-card__body">
+            <h3>Rev. Shayla Johnson</h3>
+            <a class="btn btn--primary" href="/pages/pastor-shayla.html">Meet Our Pastor</a>
+          </div>
+        </article>
+
+        <article class="leader-card">
+          <img src="https://newlifeumc.church/wp-content/uploads/2025/10/churchLogo.webp" alt="Leadership Board"
+            loading="lazy" />
+          <div class="leader-card__body">
+            <h3>Leadership Board</h3>
+            <a class="btn btn--primary" href="/pages/leadership-board.html">Meet Our Board</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Register Email -->
+  <section class="section section--tight" id="plan">
+    <div class="container">
+      <div class="cta">
+        <h2>Stay Updated With Weekly Announcements</h2>
+        <a class="btn btn--pill" href="#">Register Email</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__col">
+        <div class="footer__cap">Get In Contact</div>
+
+        <div class="footer__row">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>2600 Bond Ave, Drexel Hill, PA 19026</span>
+        </div>
+
+        <div class="footer__row">
+          <i class="fa-solid fa-phone"></i>
+          <span>(+123) 4567 890</span>
+        </div>
+
+        <div class="footer__row">
+          <i class="fa-regular fa-envelope"></i>
+          <a href="mailto:newlifeumc1@gmail.com">newlifeumc1@gmail.com</a>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <div class="footer__cap">Subscribe Newsletter</div>
+        <p class="footer__muted">You will be notified when something new will be appear.</p>
+
+        <div class="footer__cap footer__cap--mt">Follow Us Social</div>
+        <div class="social">
+          <a class="social__btn" href="https://www.facebook.com/newlifeumcdrexelhillpa/" aria-label="Facebook"><i
+              class="fa-brands fa-facebook-f"></i></a>
+          <a class="social__btn" href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a class="social__btn" href="#" aria-label="Google"><i class="fa-brands fa-google"></i></a>
+          <a class="social__btn" href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a class="social__btn" href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <div class="footer__cap">Our Recent Posts</div>
+        <p class="footer__muted">Add your latest posts here when you’re ready.</p>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container footer__bottomInner">
+        <span>© Copyright 2025. All Rights Reserved.</span>
+        <span>Grace and Peace, New Life UMC</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

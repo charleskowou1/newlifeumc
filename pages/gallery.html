@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+ <meta charset="utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <title>Picture Gallery | New Life UMC</title>
+
+ <!-- Google font -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+ <!-- Icons (Font Awesome) -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+ <!-- webicon (path from /pages -> go up 1) -->
+ <link rel="icon" type="image/png" href="../New-Life-UMC-Logo.png">
+
+ <!-- CSS (path from /pages -> go up 1) -->
+ <link rel="stylesheet" href="../styles.css" />
+</head>
+
+<body>
+
+ <!-- Top header (same as index) -->
+ <header class="topbar">
+  <div class="container topbar__inner">
+   <a class="brand" href="../index.html">
+    <img class="brand__logo" src="../assets/Nogo.png" alt="New Life UMC logo" loading="lazy" />
+    <span class="brand__name">New Life United Methodist Church</span>
+   </a>
+
+   <div class="topbar__actions">
+    <a class="icon-sq" href="mailto:newlifeumc1@gmail.com" aria-label="Email">
+     <img src="../assets/email.png" alt="Email">
+    </a>
+
+    <a class="icon-circle" href="https://www.facebook.com/newlifeumcdrexelhillpa/" target="_blank" rel="noopener">
+     <img src="../assets/facebook.png" alt="Facebook">
+    </a>
+
+    <a class="icon-circle" href="https://www.youtube.com/" target="_blank" rel="noopener">
+     <img src="../assets/youtube.png" alt="YouTube">
+    </a>
+
+    <a class="icon-circle" href="https://www.instagram.com/" target="_blank" rel="noopener">
+     <img src="../assets/instagram.png" alt="Instagram">
+    </a>
+   </div>
+  </div>
+ </header>
+
+ <!-- Nav (same as index) -->
+ <nav class="nav">
+  <div class="container nav__inner">
+   <button class="nav__toggle" aria-label="Open menu" aria-expanded="false" id="menuToggle">
+    <i class="fa-solid fa-bars"></i>
+   </button>
+
+   <ul class="nav__links" id="navLinks">
+
+    <li class="has-dropdown">
+     <a class="nav__link" href="#ministries">Ministries <i class="fa-solid fa-chevron-down"></i></a>
+     <ul class="dropdown">
+      <li><a href="#">Love Renegades</a></li>
+      <li><a href="#">Women’s & Men’s Ministries</a></li>
+      <li><a href="#">Young People Ministries</a></li>
+      <li><a href="#">Ministry of Blessing</a></li>
+      <li><a href="#">Worship Ministries</a></li>
+     </ul>
+    </li>
+
+    <li class="has-dropdown">
+     <a class="nav__link" href="#spiritual">Spiritual Enrichment <i class="fa-solid fa-chevron-down"></i></a>
+     <ul class="dropdown">
+      <li><a href="/pages/prayer-requests.html">Prayer Requests</a></li>
+      <li><a href="#">Worship Services</a></li>
+      <li><a href="#">Bible Study Nuggets</a></li>
+      <li><a href="#">Junior Church Lessons</a></li>
+     </ul>
+    </li>
+
+    <li class="has-dropdown">
+     <a class="nav__link is-active" href="#mission">Mission Ministry <i class="fa-solid fa-chevron-down"></i></a>
+     <ul class="dropdown">
+      <li><a href="../pages/events.html">Upcoming Events</a></li>
+      <li><a href="../pages/mission-partners.html">Mission Partners</a></li>
+      <li><a href="../pages/gallery.html">Picture Gallery</a></li>
+     </ul>
+    </li>
+
+    <li class="has-dropdown">
+     <a class="nav__link" href="#about">About Us <i class="fa-solid fa-chevron-down"></i></a>
+     <ul class="dropdown">
+      <li><a href="#leaders">Leaders</a></li>
+      <li><a href="/pages/mission-vision.html">Mission & Vision</a></li>
+      <li><a href="#">Contact Us</a></li>
+     </ul>
+    </li>
+   </ul>
+
+   <a class="btn btn--primary btn--donate" href="https://pushpay.com/g/newlifeumcpa" target="_blank" rel="noreferrer">
+    <i class="fa-solid fa-heart"></i>
+    Push Pay
+   </a>
+  </div>
+ </nav>
+
+ <!-- Page content -->
+ <main class="gallery">
+  <div class="container">
+
+   <div class="gallery__header">
+    <div>
+     <h1 class="gallery__title">Picture Gallery</h1>
+     <p class="gallery__sub">
+      Full albums are hosted in Google Photos for fast loading and unlimited sharing.
+     </p>
+    </div>
+   </div>
+
+   <div class="galleryGrid">
+
+    <!-- Father’s Day -->
+    <a class="albumCard" href="https://photos.app.goo.gl/jrvnCTfSyGvhN5gU8" target="_blank" rel="noopener">
+     <div class="albumCard__cover">
+      <span class="albumCard__badge"><i class="fa-regular fa-images"></i> Album</span>
+      <span class="albumCard__open" aria-hidden="true"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+
+      <img src="../assets/gallery/fathersday-cover.jpg" alt="New Life Father’s Day 2025" loading="lazy" />
+     </div>
+
+     <div class="albumCard__body">
+      <h3 class="albumCard__title">New Life Father’s Day 2025</h3>
+      <div class="albumCard__meta">
+       <span class="albumCard__chip"><i class="fa-regular fa-calendar"></i> June 2025</span>
+       <span class="albumCard__chip"><i class="fa-brands fa-google"></i> Google Photos</span>
+      </div>
+     </div>
+    </a>
+
+
+
+    <!-- Youth Barbecue -->
+    <a class="albumCard" href="https://photos.app.goo.gl/D7E1Mh9EwuME72sZ7" target="_blank" rel="noopener">
+     <div class="albumCard__cover">
+      <span class="albumCard__badge"><i class="fa-regular fa-images"></i> Album</span>
+      <span class="albumCard__open" aria-hidden="true"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+
+      <img src="../assets/gallery/youth-bbq-cover.jpg" alt="Youth Barbecue May 2025" loading="lazy" />
+     </div>
+
+     <div class="albumCard__body">
+      <h3 class="albumCard__title">Youth Barbecue</h3>
+      <div class="albumCard__meta">
+       <span class="albumCard__chip"><i class="fa-regular fa-calendar"></i> May 2023</span>
+       <span class="albumCard__chip"><i class="fa-brands fa-google"></i> Google Photos</span>
+      </div>
+     </div>
+    </a>
+
+    <!-- Coming Soon (placeholder) -->
+    <a class="albumCard albumCard--disabled" href="#" aria-disabled="true" onclick="return false;">
+     <div class="albumCard__cover">
+      <span class="albumCard__badge"><i class="fa-regular fa-clock"></i> Coming Soon</span>
+
+      <img src="../assets/gallery/coming-soon.jpg" alt="More photos coming soon" loading="lazy" />
+     </div>
+
+     <div class="albumCard__body">
+      <h3 class="albumCard__title">More Photos Coming Soon</h3>
+      <div class="albumCard__meta">
+       <span class="albumCard__chip"><i class="fa-regular fa-images"></i> Album</span>
+       <span class="albumCard__chip"><i class="fa-regular fa-bell"></i> Stay Tuned</span>
+      </div>
+     </div>
+    </a>
+
+   </div>
+
+  </div>
+ </main>
+
+ <!-- Footer -->
+ <footer class="footer">
+  <div class="container footer__grid">
+   <div class="footer__col">
+    <div class="footer__cap">Get In Contact</div>
+
+    <div class="footer__row">
+     <i class="fa-solid fa-location-dot"></i>
+     <span>2600 Bond Ave, Drexel Hill, PA 19026</span>
+    </div>
+
+    <div class="footer__row">
+     <i class="fa-solid fa-phone"></i>
+     <span>(+123) 4567 890</span>
+    </div>
+
+    <div class="footer__row">
+     <i class="fa-regular fa-envelope"></i>
+     <a href="mailto:newlifeumc1@gmail.com">newlifeumc1@gmail.com</a>
+    </div>
+   </div>
+
+   <div class="footer__col">
+    <div class="footer__cap">Subscribe Newsletter</div>
+    <p class="footer__muted">You will be notified when something new will be appear.</p>
+
+    <div class="footer__cap footer__cap--mt">Follow Us Social</div>
+    <div class="social">
+     <a class="social__btn" href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+     <a class="social__btn" href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+     <a class="social__btn" href="#" aria-label="Google"><i class="fa-brands fa-google"></i></a>
+     <a class="social__btn" href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+     <a class="social__btn" href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+    </div>
+   </div>
+
+   <div class="footer__col">
+    <div class="footer__cap">Our Recent Posts</div>
+    <p class="footer__muted">Add your latest posts here when you’re ready.</p>
+   </div>
+  </div>
+
+  <div class="footer__bottom">
+   <div class="container footer__bottomInner">
+    <span>© Copyright 2025. All Rights Reserved.</span>
+    <span>Grace and Peace, New Life UMC</span>
+   </div>
+  </div>
+ </footer>
+
+ <script src="../script.js"></script>
+</body>
+
+</html>
