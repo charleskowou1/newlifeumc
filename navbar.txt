@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>New Life United Methodist Church</title>
+
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons (Font Awesome) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- Top header -->
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="#">
+        <img class="brand__logo" src="https://newlifeumc.church/wp-content/uploads/2025/10/New-Life-UMC-Logo.png"
+          alt="New Life UMC logo" loading="lazy" />
+        <span class="brand__name">New Life United Methodist Church</span>
+      </a>
+
+      <div class="topbar__actions">
+        <a class="icon-sq" href="mailto:newlifeumc1@gmail.com" aria-label="Email">
+          <i class="fa-regular fa-envelope"></i>
+        </a>
+
+        <a class="icon-circle" href="https://www.facebook.com/" aria-label="Facebook">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+
+        <a class="icon-circle" href="https://www.youtube.com/" aria-label="YouTube">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+
+        <a class="icon-circle" href="https://www.instagram.com/" aria-label="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Nav -->
+  <nav class="nav">
+    <div class="container nav__inner">
+      <button class="nav__toggle" aria-label="Open menu" aria-expanded="false" id="menuToggle">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <ul class="nav__links" id="navLinks">
+        <li><a class="nav__link is-active" href="#">Home</a></li>
+
+        <li class="has-dropdown">
+          <a class="nav__link" href="#ministries">Ministries <i class="fa-solid fa-chevron-down"></i></a>
+          <ul class="dropdown">
+            <li><a href="#">Love Renegades</a></li>
+            <li><a href="#">Women’s & Men’s Ministries</a></li>
+            <li><a href="#">Young People Ministries</a></li>
+            <li><a href="#">Ministry of Blessing</a></li>
+            <li><a href="#">Worship Ministries</a></li>
+          </ul>
+        </li>
+
+        <li class="has-dropdown">
+          <a class="nav__link" href="#spiritual">Spiritual Enrichment <i class="fa-solid fa-chevron-down"></i></a>
+          <ul class="dropdown">
+            <li><a href="#">Prayer Requests</a></li>
+            <li><a href="#">Worship Services</a></li>
+            <li><a href="#">Bible Study Nuggets</a></li>
+            <li><a href="#">Junior Church Lessons</a></li>
+          </ul>
+        </li>
+
+        <li class="has-dropdown">
+          <a class="nav__link" href="#mission">Mission Ministry <i class="fa-solid fa-chevron-down"></i></a>
+          <ul class="dropdown">
+            <li><a href="../pages/events.html">Upcoming Events</a></li>
+            <li><a href="../pages/mission-partners.html">Mission Partners</a></li>
+            <li><a href="../pages/gallery.html">Picture Gallery</a></li>
+          </ul>
+        </li>
+
+        <li class="has-dropdown">
+          <a class="nav__link" href="#about">About Us <i class="fa-solid fa-chevron-down"></i></a>
+          <ul class="dropdown">
+            <li><a href="#leaders">Leaders</a></li>
+            <li><a href="#">Mission & Vision</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <a class="btn btn--primary" href="https://pushpay.com/g/newlifeumcpa" target="_blank" rel="noreferrer">
+        Push Pay
+      </a>
+    </div>
+  </nav>
+
+ </html>
